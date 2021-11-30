@@ -7,6 +7,7 @@
             href="#"
             class="list-group-item list-grouo-item-action"
             *ngFor="let gif of gifs"
+            (click)="buscar(gif)"
         >
             {{gif | titlecase}}
         </a>
